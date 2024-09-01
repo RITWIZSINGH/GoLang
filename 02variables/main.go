@@ -20,4 +20,16 @@ func main() {
 	fmt.Println(smallFloat)
 	fmt.Printf("Variable is of type: %T \n",smallFloat)
 
+	//default values and some aliases
+	var anotherVar int
+	fmt.Println(anotherVar)
+	fmt.Printf("Variable is of type: %T \n",anotherVar)
+
+	var anotherString string
+	fmt.Println(anotherString)
+	fmt.Printf("Variable is of type: %T \n",anotherString)
+
+	
+
+
 }
