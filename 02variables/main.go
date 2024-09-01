@@ -8,10 +8,12 @@ import "fmt"
 // var token = 412 // or
 // var token2 int = 23
 
+const LoginToken string = "adiubachsbc" // Here the 'L' is capital that means the LoginToken can be accessed anywhere in this program 
+
 func main() {
 	 
 	var username string = "Ritwiz"//normal string
-	fmt.Println(username)
+	fmt.Println(username)//**Interesting Fact** Here the first letter of Println function of 'fmt' package is Capital that means in the package this function was exported publicly. You can directly use this of fmt in your code. There can be many functions starting with a small letter that are helping the Println to print a line.
 	fmt.Printf("Variable is of type: %T \n",username)
 
 	var isLoggedIn bool = true//bool value can be true or false
@@ -37,7 +39,7 @@ func main() {
 
 	//Implicit type declaration
 
-	var website = "ritwiz.in" //Here the lexer has assumed the value of the var 'website' as string
+	var website = "yourname.in" //Here the lexer has assumed the value of the var 'website' as string
 	fmt.Println(website) //This works fine because 
 	//now , i cannot write a line like "webiste = 3" as it is now a string due to line34.
 
@@ -46,5 +48,6 @@ func main() {
 	fmt.Println(noOfUsers) //without using the keyword var
 	//If I change noOfUser := 3000.0 in line39 it will consider a float
 
+	fmt.Println(LoginToken)
 
 }
