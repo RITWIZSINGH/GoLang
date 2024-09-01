@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+//Suppose I use the 'walrus operator' outside a method like
+//token := 300 (But we can't) walrus operator can be only used inside a method or a main function
+//The correct way of declaring a var outside the above cond will be the following:
+// var token = 412 // or
+// var token2 int = 23
+
 func main() {
 	 
 	var username string = "Ritwiz"//normal string
@@ -29,7 +35,16 @@ func main() {
 	fmt.Println(anotherString)
 	fmt.Printf("Variable is of type: %T \n",anotherString)
 
-	
+	//Implicit type declaration
+
+	var website = "ritwiz.in" //Here the lexer has assumed the value of the var 'website' as string
+	fmt.Println(website) //This works fine because 
+	//now , i cannot write a line like "webiste = 3" as it is now a string due to line34.
+
+	//No var Style Declaration
+	noOfUsers := 30000 // Here ":=" is called the 'WALRUS OPERATOR' it automatically assumes the type of the var 	
+	fmt.Println(noOfUsers) //without using the keyword var
+	//If I change noOfUser := 3000.0 in line39 it will consider a float
 
 
 }
