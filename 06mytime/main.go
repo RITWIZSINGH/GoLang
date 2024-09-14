@@ -24,6 +24,6 @@ func main() {
 	fmt.Println("****************************************************************************")
 	fmt.Println("Here is a created date")
 	createdDate := time.Date(2024,time.November,21,21,0,0,0,time.UTC)
-	fmt.Println(createdDate)
+	fmt.Println(createdDate)//you can again format this date like the previous ones
 
 }
