@@ -27,7 +27,8 @@ func main() {
 	fmt.Println("After slicing from 1:3 the fruitlist is ", fruitList)
 	fmt.Println("*********************************************************************")
 
-	fruitList = fruitList[:3] // slicing from :3 means slice from default that is 0 to 3rd element and dont include the 3rd index element
+	fruitList = fruitList[:3] 
+	// slicing from :3 means slice from default that is 0 to 3rd element and dont include the 3rd index element
 	fmt.Println("After slicing from :3 the fruitlist is ", fruitList)
 	fmt.Println("*********************************************************************")
 
@@ -38,10 +39,12 @@ func main() {
 	highScores[2] = 323
 	highScores[3] = 164
 
-	fmt.Println("The highscores without sorting are", highScores) // this will simply showcase the element in the slice highScores
+	fmt.Println("The highscores without sorting are", highScores) 
+	// this will simply showcase the element in the slice highScores
 	fmt.Println("*********************************************************************")
 
-	highScores = append(highScores, 555,846,743) // Here we are just appending some values in the slice
+	highScores = append(highScores, 555,846,743) 
+	// Here we are just appending some values in the slice
 
 	fmt.Println("After appending some values the new highscores without sorting are", highScores)
 	fmt.Println("*********************************************************************")
@@ -51,7 +54,8 @@ func main() {
 	fmt.Println("After sorthing the elements are ", highScores)
 	fmt.Println("*********************************************************************")
 
-	fmt.Println("Are the elements in highScores slice sorted?", sort.IntsAreSorted(highScores)) // IntsAreSorted func returns true if the elements are sorted
+	fmt.Println("Are the elements in highScores slice sorted?", sort.IntsAreSorted(highScores)) 
+	// IntsAreSorted func returns true if the elements are sorted
 
 	
 
