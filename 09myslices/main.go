@@ -57,6 +57,16 @@ func main() {
 	fmt.Println("Are the elements in highScores slice sorted?", sort.IntsAreSorted(highScores)) 
 	// IntsAreSorted func returns true if the elements are sorted
 
+	//How are elements removed from a slice
+	var courses = []string{"ReactJS","NextJs","Swift","python","ruby"}
+	fmt.Println("*********************************************************************")
+	fmt.Println("The elements in courses Slice without deletion are: ", courses)	
+	var index int = 2
+	courses = append(courses[:index],courses[index+1:]...) 
+	// Here we are using the append function to remove an element from the slice
+	fmt.Println("*********************************************************************")
+	fmt.Println("The elements after removing the element at index 2 are:", courses)
+
 	
 
 	
