@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+<<<<<<< HEAD
 
 	fmt.Println("Welcome to Go Maps")
 
@@ -36,4 +37,7 @@ func main() {
 
 	
 
+=======
+fmt.Println("Welcome to Go Maps")
+>>>>>>> 225ab33c6c6e72094b766dd028c86b14578e6051
 }
